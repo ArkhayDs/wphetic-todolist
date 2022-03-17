@@ -1,4 +1,5 @@
-import {useState} from "react";
+import React, {useState} from "react";
+import Limiter from "../Middleware/Limiter";
 
 export default function Card({id, title, content, status, setCards, cards}) {
 
