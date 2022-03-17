@@ -16,6 +16,7 @@ export default function Form({setCards,limiter}) {
             };
 
             if(limiter === false) {
+                document.getElementById('addTodo').onclick = () => {  };
                 setCards(prev => [...prev, newCard]);
             } else {
                 document.getElementById('addTodo').onclick = () => { alert("Wowowo, tout doux bijou. Tu as déjà 10 cartes de to-do à faire. Tu penses pas qu'il serait temps de s'y mettre d'abord ?");}

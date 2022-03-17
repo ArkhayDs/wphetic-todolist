@@ -108,7 +108,7 @@ export default function Card({id, title, content, status, setCards, cards}) {
                 <DisplayCardContent titleEdit={titleEdit} contentEdit={contentEdit} settitleEdit={settitleEdit} setcontentEdit={setcontentEdit} title={title} content={content} cardEdit={cardEdit} />
                 <div className="row">
                     <div className="col">
-                        <button className="btn btn-danger" onClick={() => handleDelete()}>Delete</button>
+                        <button className="btn btn-danger" onClick={handleDelete}>Delete</button>
                     </div>
                     <div className="col">
                         <HandleButton />
